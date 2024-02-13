@@ -43,7 +43,7 @@ const Todo = () => {
           <button
             onClick={todoHandler}
             type="button"
-            className="btn btn-primary btn-lg"
+            className="btn btn-danger btn-lg"
           >
             Submit
           </button>
