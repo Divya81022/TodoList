@@ -26,8 +26,8 @@ const Todo = () => {
   };
   return (
     <>
-      <div className="container p-5 my-5 border shadow-lg p-4 mb-4 bg-white mx-auto w-50">
-        <h1 className="h1 pb-4" style={{ textAlign: "center", fontSize:"35px" }}>
+      <div className="container mx-auto w-auto shadow-lg mb-4 bg-white mt-4">
+        <h1 className="h1 pb-4" style={{ textAlign: "center", fontSize:"30px" }}>
           Todo List With Redux Toolkit
         </h1>
         <div class="input-group m-2">
@@ -37,20 +37,20 @@ const Todo = () => {
             value={text}
             placeholder="Enter Your Name"
             onChange={handleChange}
-            className="form-control w-75 float-start ms-4 me-4"
+            className="form-control w-auto float-start"
             style={{ fontSize: "18px" }}
           ></input>
           <button
             onClick={todoHandler}
             type="button"
-            className="btn btn-danger btn-lg"
+            className="btn btn-primary btn-lg"
           >
             Submit
           </button>
         </div>
 
         <br></br>
-        <ul className="list-group list-group-p-5 m-2 w-75 mx-auto">
+        <ul className="list-group list-group-p-5 w-auto mx-auto">
           {todo &&
             todo.map((item, index) => {
               return (
